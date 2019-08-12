@@ -1,2 +1,2 @@
 # homeNow
-A conceptual real estate comapny with a variety of products and services
+A conceptual real estate company with a variety of products and services
