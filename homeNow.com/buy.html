@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>homeNOW</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="homeNOw ltd" />
+    <meta
+      name="keywords"
+      content="building house home buy rent sell real estate"
+    />
+
+    <!--Main CSS file-->
+    <link rel="stylesheet" href="index.css" type="text/css" />
+
+    <!--Bootstrap 4-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!--Font-Awesome icons-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!--Navigation items at center of screen-->
+    <nav id="navbar" class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a href="index.html" class="navbar-brand ml-auto">
+        <span>home</span><span style="color: red">NOW!</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" id="Buy">
+            <a href="buy.html" class="nav-link">Buy</a>
+            <div id="buy">
+              <div>Homes for sale</div>
+              <div>Off plan</div>
+              <div>Forclosures</div>
+              <div>Buyers guide</div>
+            </div>
+          </li>
+          <li class="nav-item" id="Sell">
+            <a href="sell.html" class="nav-link">Sell</a>
+            <div id="sell">
+              <div>Sell a home</div>
+              <div>Estimation</div>
+              <div>Sellers guide</div>
+            </div>
+          </li>
+          <li class="nav-item" id="Rent">
+            <a href="buy.html" class="nav-link">Rent</a>
+            <div id="rent">
+              <div>Houses for rent</div>
+              <div>Rent out a house</div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Mortgage</a>
+          </li>
+          <li class="nav-item" id="Agent">
+            <a href="agent.html" class="nav-link">Agent</a>
+            <div id="agent">
+              <div>Buyer&apos;s agent</div>
+              <div>Sales agent</div>
+              <div>Consultancy</div>
+              <div>Hiring</div>
+            </div>
+          </li>
+          <li class="nav-item" id="Sign">
+            <a href="#" class="nav-link">Sign in</a>
+            <div id="sign">
+              <form action="" style="padding: 5px">
+                <input type="text" placeholder="Name" /><br />
+                <input
+                  type="email"
+                  placeholder="Email address"
+                  required
+                /><br />
+                <button type="submit">Sign in</button>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="content" style="color: black">
+      <!--Flex image gallery-->
+      <div class="Row">
+        <!--Google map-->
+        <div id="mp-content">
+          <h7>Select your location of choice</h7>
+          <div id="map"></div>
+          <form action="">
+            <input type="search" placeholder="Country, city, neghbourhood..." />
+            <i class="fas fa-search"></i>
+          </form>
+        </div>
+
+        <div class="Column">
+          <img
+            src="css-images/real-estate/apartment-1851201_1920-min.jpg"
+            alt=""
+          />
+          <img
+            src="css-images/real-estate/appartment-building-835817_1920-min.jpg"
+            alt=""
+          />
+          <img
+            src="css-images/real-estate/architecture-1836070_1920-min.jpg"
+            alt=""
+          />
+          <img
+            src="css-images/real-estate/architecture-1867187_1920-min.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="Column">
+          <img
+            src="css-images/real-estate/building-3215255_1920-min.jpg"
+            alt=""
+          />
+          <img
+            src="css-images/real-estate/condominium-690086_1920-min.jpg"
+            alt=""
+          />
+          <img
+            src="css-images/real-estate/dining-room-3108037_1280-min.jpg"
+            alt=""
+          />
+          <img src="css-images/real-estate/hall-621741_1920-min.jpg" alt="" />
+          <img
+            src="css-images/real-estate/architecture-3050682_1920-min.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="Column">
+          <img
+            src="css-images/real-estate/moscow-city-1568042_1920-min.jpg"
+            alt=""
+          />
+          <img
+            src="css-images/real-estate/skyscraper-2175943_1920-min.jpg"
+            alt=""
+          />
+          <img src="css-images/real-estate/house-66627_1920-min.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv-_ZN8C1dhh_gQeSrgvcEwBZGSfOxngs&callback=initMap"
+    ></script>
+
+    <script>
+      function initMap() {
+        var nairobi = { lat: -1.2921, lng: 36.8219 };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 6,
+          center: nairobi,
+
+          styles: [
+            { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+            {
+              elementType: "labels.text.stroke",
+              stylers: [{ color: "#242f3e" }]
+            },
+            {
+              elementType: "labels.text.fill",
+              stylers: [{ color: "#746855" }]
+            },
+            {
+              featureType: "administrative.locality",
+              elementType: "labels.text.fill",
+              stylers: [{ color: "#d59563" }]
+            },
+            {
+              featureType: "poi",
+              elementType: "labels.text.fill",
+              stylers: [{ color: "#d59563" }]
+            },
+            {
+              featureType: "poi.park",
+              elementType: "geometry",
+              stylers: [{ color: "#263c3f" }]
+            },
+            {
+              featureType: "poi.park",
+              elementType: "labels.text.fill",
+              stylers: [{ color: "#6b9a76" }]
+            },
+            {
+              featureType: "road",
+              elementType: "geometry",
+              stylers: [{ color: "#38414e" }]
+            },
+            {
+              featureType: "road",
+              elementType: "geometry.stroke",
+              stylers: [{ color: "#212a37" }]
+            },
+            {
+              featureType: "road",
+              elementType: "labels.text.fill",
+              stylers: [{ color: "#9ca5b3" }]
+            },
+            {
+              featureType: "road.highway",
+              elementType: "geometry",
+              stylers: [{ color: "#746855" }]
+            },
+            {
+              featureType: "road.highway",
+              elementType: "geometry.stroke",
+              stylers: [{ color: "#1f2835" }]
+            },
+            {
+              featureType: "road.highway",
+              elementType: "labels.text.fill",
+              stylers: [{ color: "#f3d19c" }]
+            },
+            {
+              featureType: "transit",
+              elementType: "geometry",
+              stylers: [{ color: "#2f3948" }]
+            },
+            {
+              featureType: "transit.station",
+              elementType: "labels.text.fill",
+              stylers: [{ color: "#d59563" }]
+            },
+            {
+              featureType: "water",
+              elementType: "geometry",
+              stylers: [{ color: "#17263c" }]
+            },
+            {
+              featureType: "water",
+              elementType: "labels.text.fill",
+              stylers: [{ color: "#515c6d" }]
+            },
+            {
+              featureType: "water",
+              elementType: "labels.text.stroke",
+              stylers: [{ color: "#17263c" }]
+            }
+          ]
+        });
+        var marker = new google.maps.Marker({ position: nairobi, map: map });
+      }
+    </script>
+
+    <!--Main JS file-->
+    <script src="index.js"></script>
+  </body>
+</html>
