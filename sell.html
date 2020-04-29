@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>homeNOW</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="homeNOw ltd" />
+    <meta
+      name="keywords"
+      content="building house home buy rent sell real estate"
+    />
+
+    <!--Main CSS file-->
+    <link rel="stylesheet" href="index.css" type="text/css" />
+
+    <!--Bootstrap 4-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!--Font-Awesome icons-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body style="background-color: rgb(114, 114, 247)">
+    <!--Navigation items at center of screen-->
+    <nav id="navbar" class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a href="index.html" class="navbar-brand ml-auto">
+        <span>home</span><span style="color: red">NOW!</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" id="Buy">
+            <a href="buy.html" class="nav-link">Buy</a>
+            <div id="buy">
+              <div>Homes for sale</div>
+              <div>Off plan</div>
+              <div>Forclosures</div>
+              <div>Buyers guide</div>
+            </div>
+          </li>
+          <li class="nav-item" id="Sell">
+            <a href="sell.html" class="nav-link">Sell</a>
+            <div id="sell">
+              <div>Sell a home</div>
+              <div>Estimation</div>
+              <div>Sellers guide</div>
+            </div>
+          </li>
+          <li class="nav-item" id="Rent">
+            <a href="buy.html" class="nav-link">Rent</a>
+            <div id="rent">
+              <div>Houses for rent</div>
+              <div>Rent out a house</div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="buy.html" class="nav-link">Morgage</a>
+          </li>
+          <li class="nav-item" id="Agent">
+            <a href="agent.html" class="nav-link">Agent</a>
+            <div id="agent">
+              <div>Buyer&apos;s agent</div>
+              <div>Sales agent</div>
+              <div>Consultancy</div>
+              <div>Hiring</div>
+            </div>
+          </li>
+          <li class="nav-item" id="Sign">
+            <a href="#" class="nav-link">Sign in</a>
+            <div id="sign">
+              <form action="" style="padding: 5px">
+                <input type="text" placeholder="Name" /><br />
+                <input
+                  type="email"
+                  placeholder="Email address"
+                  required
+                /><br />
+                <button type="submit">Sign in</button>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="sellerstuff">
+      <h3 style="text-align: center">Sell, sell, sell!</h3>
+      <p>
+        After reading the
+        <a href="#" style="color: red">Terms and conditions</a>, go ahead and
+        put up a home, room or office for sale.
+        <a href="agent.html" style="color: red"
+          >Get one of our trustworthy agents</a
+        >
+        at a reasonable price to aid you through the process. Make sure you sign
+        our trust agreement, and ensure the buyer has signed their copy of the
+        buyer&apos;s agreement.(Both the buyer and seller are expected to fill
+        out the required documents in triplicate.)
+      </p>
+      <form action="" id="sellform">
+        First name<br /><input type="text" required /><br />Surname<br />
+        <input type="text" required /><br />
+        Date of birth<br />
+        <input type="date" required /><br />
+        City<br /><input type="text" required />
+        <br />
+        Address<br />
+        <input type="text" /><br />
+        Credit card number<br /><input type="number" /><br />
+        <input type="checkbox" required />I have read, understood and agree to
+        the terms and conditions.
+      </form>
+    </div>
+
+    <!--Main JS file-->
+    <script src="index.js"></script>
+  </body>
+</html>
